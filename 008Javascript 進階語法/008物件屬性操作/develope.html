@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+
+    <!--第一種寫法-->
+    <!--
+    <script>
+        function say(msg) {
+            alert(msg);
+        };
+        var person = new Object();
+        person.Name = "Jordan";
+        person.Say = say;
+
+        //直接取得屬性
+        alert("直接取得屬性:" + person.Name);
+        //呼叫方法
+        person.Say("呼叫方法:Hello");
+        //用名稱字串取得屬性
+        alert("用名稱字串取得屬性:" + person["Name"]);
+        //透過名稱字串呼叫方法
+        person["Say"]("透過名稱字串呼叫方法Say");
+    </script>
+    -->
+
+    <!--第二種寫法-->
+    <!--
+    <script>
+        var RtJob = new Object();
+        RtJob.Name = "我是神!!";
+        RtJob.Say = function (mag) {
+            alert(mag + RtJob.Name);
+        };
+        RtJob.Say("誰是神?");
+    </script>
+    -->
+
+    <!--第三種寫法-->
+    <script>
+        var RtJob = {
+            Name: "Tomorrow",
+            Say: function (msg) { alert("這是個好消息!!" + msg) }
+        };
+
+        RtJob.Say("最後一個測試功能!!");
+
+    </script>
+</head>
+<body>
+    <p id="test">
+    </p>
+</body>
+</html>

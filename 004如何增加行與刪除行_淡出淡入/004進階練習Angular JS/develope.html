@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <script src="js/gadget.js"></script>
+    <script>
+        init({
+            application: "dev.sh_d",
+            paramValues: {}
+        });
+    </script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/test.js"></script>
+</head>
+<body>
+    <table class="test">
+        <thead>
+            <tr>
+                <th>
+                    這是一行測試標題
+                </th>
+                <th>
+                    <input id="add_button" type="button" value="新增一行" />
+                </th>
+            </tr>
+        </thead>
+        <tbody class="test2">
+            <tr>
+                <td>
+                    資料行
+                </td>
+                <td>
+                    <input id="clearRow" type="button" value="刪除本行" onclick="delRow(this)" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>
+        <p class="ppand">
+            這是數數
+        </p>
+    </h1>
+</body>
+</html>

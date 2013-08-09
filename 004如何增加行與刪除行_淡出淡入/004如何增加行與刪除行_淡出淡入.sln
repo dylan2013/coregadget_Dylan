@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004如何增加行與刪除行_淡出淡入", "004進階練習Angular JS\004如何增加行與刪除行_淡出淡入.csproj", "{503C7764-36B0-4F8B-914F-28A7C3AEBF5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{503C7764-36B0-4F8B-914F-28A7C3AEBF5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503C7764-36B0-4F8B-914F-28A7C3AEBF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503C7764-36B0-4F8B-914F-28A7C3AEBF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503C7764-36B0-4F8B-914F-28A7C3AEBF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

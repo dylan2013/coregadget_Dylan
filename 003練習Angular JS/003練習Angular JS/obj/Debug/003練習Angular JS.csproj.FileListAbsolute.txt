@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\003練習Angular JS\003練習Angular JS\bin\003練習Angular JS.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\003練習Angular JS\003練習Angular JS\bin\003練習Angular JS.pdb
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\003練習Angular JS\003練習Angular JS\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\003練習Angular JS\003練習Angular JS\obj\Debug\003練習Angular JS.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\003練習Angular JS\003練習Angular JS\obj\Debug\003練習Angular JS.pdb

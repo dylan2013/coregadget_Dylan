@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function Myfun()
+{
+	var x="" , y="把我加一百次";
+	for(i=0 ; i<=100 ; i++)
+	{
+		x = x + y + "(" + i + ")<br>";
+			if (i==50)
+			{
+				break;
+			}
+	}
+	document.getElementById("test2").innerHTML = x;
+}
+</script>
+</head>
+
+<body>
+	<a id="test1">這是一個123</a><br>
+	<a id="test2">456</a><br>
+<button onclick="Myfun()">On Click Me</button><br>
+
+</body>
+
+</html>

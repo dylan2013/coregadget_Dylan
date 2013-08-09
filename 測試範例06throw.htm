@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+function Myfun()
+{
+	var x={name:"總裁",age:18}
+	try
+	{
+		//alert("正確反應");
+		throw(x);
+	}
+	catch(err)
+	{
+		document.getElementById("demo").innerHTML = err.age
+	}
+
+}
+
+</script>
+</head>
+
+<body>
+<a>錯誤訊息如下：</a>
+<a id="demo">請照以下操作</a>
+<button onclick="Myfun()">按我一下</button>
+
+</body>
+
+</html>

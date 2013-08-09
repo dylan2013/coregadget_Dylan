@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+function Myfun()
+{
+	var x="" , y="把我加一百次";
+	for(i=0 ; i<=100 ; i++)
+	{
+		x = x + y + "(" + i + ")<br>";
+			if (i==50)
+			{
+				break;
+			}
+	}
+	document.getElementById("test2").innerHTML = x;
+}
+function MyOpen(x1)
+{
+	if(x1==1)
+	{
+		alert("開啟畫面中...")
+	}
+	else
+	{
+		alert("掰掰...");
+	}
+}
+</script>
+</head>
+
+<body onload="MyOpen(1)" onunload="MyOpen(2)">
+	<a id="test1">這是一個123</a><br>
+	<a id="test2">請輸入</a><br>
+<input>請輸入內容</input>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\002任意取得100學生\002任意取得100學生\bin\002任意取得100學生.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\002任意取得100學生\002任意取得100學生\bin\002任意取得100學生.pdb
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\002任意取得100學生\002任意取得100學生\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\002任意取得100學生\002任意取得100學生\obj\Debug\002任意取得100學生.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\002任意取得100學生\002任意取得100學生\obj\Debug\002任意取得100學生.pdb

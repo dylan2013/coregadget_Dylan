@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function Myfun()
+{
+	try
+	{
+		alert("正確反應");
+	}
+	catch(err)
+	{
+		document.getElementById("demo").innerHTML = err
+	}
+
+}
+
+</script>
+</head>
+
+<body>
+<a>錯誤訊息如下：</a>
+<a id="demo">請照以下操作</a>
+<button onclick="Myfun()">按我一下</button>
+
+</body>
+
+</html>

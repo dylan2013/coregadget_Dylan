@@ -1,0 +1,29 @@
+<html>
+<head>
+
+</head>
+
+<body onload="runTimer()">
+<script>
+
+function runTimer()
+{
+	var h, m, s, ms ,myday, result;
+	myday = new Date();
+	h = myday.getHours();
+	m = myday.getMinutes();
+	s = myday.getSeconds();
+	ms = myday.getMilliseconds();
+	result = h +":" +m +":" +s +":" +ms;
+	document.getElementById("demo").innerHTML = "中原標準時間:"+result;
+
+	t= setTimeout("runTimer()",10);
+}
+
+</script>
+<h1 id = "demo">
+
+</h1>
+</body>
+
+</html>

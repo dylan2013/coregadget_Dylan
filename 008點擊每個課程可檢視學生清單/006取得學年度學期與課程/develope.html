@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <script src="js/gadget.js"></script>
+    <script>
+        init({
+            application: "dev.sh_d",
+            paramValues: {}
+        });
+    </script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/test.js"></script>
+    <script>
+        $(document).ready(function () {
+            var conn = gadget.getContract("basic.teacher");
+            var courseArray = [];
+            var SchoolYearSemester = [];
+            conn.send({
+                service: "GetMyCourse",
+                body: "",
+                result: function (response, error, http) {
+                    /* 當沒有錯誤時 */
+                    if (error === null) {
+                        /* 整理出學年度學期資料清單 */
+                        $(response.Course).each(function (index, item) {
+                            /* 如果(sy+學年學期) 不存在courseArray之內 */
+                            var name = "sy" + item.SchoolYear + item.Semester;
+                            if (!courseArray[name]) {
+                                /* new 一個物件 具有3個屬性 */
+                                var data = {
+                                    SchoolYear: item.SchoolYear,
+                                    Semester: item.Semester,
+                                    Course: []
+                                };
+
+                                courseArray[name] = data;
+                                courseArray.push(data);
+                            }
+
+                            courseArray[name].Course.push(item);
+                            //var SchoolName = "學年度:" + item.SchoolYear + "_學期:" + item.Semester;
+
+                            if (!SchoolYearSemester[name]) {
+                                SchoolYearSemester.push(name);
+                                SchoolYearSemester[name] = true; //或其他任何非 false 類的值
+                            }
+                        });
+                    }
+                    else {
+                        alert(error);
+                    }
+
+                    alert("完成!!");
+
+                    //item是一個字串(如:sy1011)
+                    $(SchoolYearSemester).each(function (index, item) {
+                        $('#schoolyear').append('<option value=' + item + '>' + item + '</option>');
+                    });
+                }
+            })
+
+            $('select').change(function () {
+                //當目前使用者所選的學年度學期
+                //存在於SchoolYearSemester之內
+                if (courseArray[$(this).val()]) {
+
+                    var courseString = '';
+                    $(courseArray[$(this).val()].Course).each(function (index, item) {
+                        courseString += "<tr>";
+                        courseString += "<td>" + item.CourseId + "</td>";
+                        courseString += "<td>" + item.CourseName + "</td>";
+                        courseString += "<td>" + item.Subject + "</td>";
+                        courseString += "<td>" + item.SchoolYear + "</td>";
+                        courseString += "<td>" + item.Semester + "</td>";
+                        courseString += "<td>" + item.Sequence + "</td>";
+                        courseString += '</tr>';
+                    })
+                    $('#tbodyIsTrue').html(courseString);
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <select id="schoolyear">
+        </select>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        課程ID:
+                    </th>
+                    <th>
+                        課程名稱:
+                    </th>
+                    <th>
+                        科目名稱:
+                    </th>
+                    <th>
+                        學年度:
+                    </th>
+                    <th>
+                        學期:
+                    </th>
+                    <th>
+                        不明:
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbodyIsTrue">
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

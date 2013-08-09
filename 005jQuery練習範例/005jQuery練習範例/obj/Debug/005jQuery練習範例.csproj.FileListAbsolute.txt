@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\005jQuery練習範例\005jQuery練習範例\bin\005jQuery練習範例.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\005jQuery練習範例\005jQuery練習範例\bin\005jQuery練習範例.pdb
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\005jQuery練習範例\005jQuery練習範例\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\005jQuery練習範例\005jQuery練習範例\obj\Debug\005jQuery練習範例.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\005jQuery練習範例\005jQuery練習範例\obj\Debug\005jQuery練習範例.pdb

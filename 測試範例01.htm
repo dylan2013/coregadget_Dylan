@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function Myfun()
+{
+	var x;
+	x = Myfun2(3,4);
+	document.getElementById("test2").innerHTML = x;
+}
+function Myfun2(var1,var2)
+{
+	return var1  * var2;
+}
+</script>
+</head>
+
+<body>
+	<a id="test1">這是一個123</a><br>
+	<a id="test2">456</a><br>
+<button onclick="Myfun()">On Click Me</button><br>
+
+</body>
+
+</html>

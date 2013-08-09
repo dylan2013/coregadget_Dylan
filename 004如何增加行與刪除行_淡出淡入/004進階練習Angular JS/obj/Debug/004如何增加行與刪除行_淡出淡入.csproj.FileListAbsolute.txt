@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\004如何增加行與刪除行_淡出淡入\004進階練習Angular JS\bin\004進階練習Angular JS.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\004如何增加行與刪除行_淡出淡入\004進階練習Angular JS\bin\004進階練習Angular JS.pdb
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\004如何增加行與刪除行_淡出淡入\004進階練習Angular JS\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\004如何增加行與刪除行_淡出淡入\004進階練習Angular JS\obj\Debug\004進階練習Angular JS.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\004如何增加行與刪除行_淡出淡入\004進階練習Angular JS\obj\Debug\004進階練習Angular JS.pdb

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008 - Javascript 進階語法", "008物件屬性操作\008 - Javascript 進階語法.csproj", "{89D3334E-8BCD-42EB-B9EE-5D0B7117729D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89D3334E-8BCD-42EB-B9EE-5D0B7117729D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D3334E-8BCD-42EB-B9EE-5D0B7117729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D3334E-8BCD-42EB-B9EE-5D0B7117729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D3334E-8BCD-42EB-B9EE-5D0B7117729D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

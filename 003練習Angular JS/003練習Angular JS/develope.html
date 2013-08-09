@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <script src="js/gadget.js"></script>
+    <script>
+        init({
+            application: "dev.sh_d",
+            paramValues: {}
+        });
+    </script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/test.js"></script>
+</head>
+<body>
+    <h1>
+        這是一個測試angular範例：</h1>
+    <table class="test">
+        <tr>
+            <th>
+                <h1>
+                    Hello World</h1>
+                <p id="say">
+                    請輸入你想說的文字：</p>
+                <!--MVC優點,當你要把它分行時如何處理???-->
+            </th>
+            <th>
+                <h1>
+                    Hello World!!</h1>
+                <p>
+                    請輸入你想說的文字：{{name}}!</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="inpu" />
+            </td>
+            <td>
+                <input type="text" ng-model="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div ng-controller="DemoCrl">
+                    {{test}}<br />
+                    {{say}}
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function DemoCrl($scope) {
+            $scope.test = 123456789;
+            $scope.say = "Abcdefg";
+        }      
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\008點擊每個課程可檢視學生清單\006取得學年度學期與課程\bin\006取得學年度學期與課程.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\008點擊每個課程可檢視學生清單\006取得學年度學期與課程\bin\006取得學年度學期與課程.pdb
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\008點擊每個課程可檢視學生清單\006取得學年度學期與課程\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\008點擊每個課程可檢視學生清單\006取得學年度學期與課程\obj\Debug\006取得學年度學期與課程.dll
+C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\008點擊每個課程可檢視學生清單\006取得學年度學期與課程\obj\Debug\006取得學年度學期與課程.pdb

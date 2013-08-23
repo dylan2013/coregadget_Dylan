@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\012JavaScript練習4\012JavaScript練習4\bin\012JavaScript練習4.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\012JavaScript練習4\012JavaScript練習4\bin\012JavaScript練習4.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\012JavaScript練習4\012JavaScript練習4\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\012JavaScript練習4\012JavaScript練習4\obj\Debug\012JavaScript練習4.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\012JavaScript練習4\012JavaScript練習4\obj\Debug\012JavaScript練習4.pdb

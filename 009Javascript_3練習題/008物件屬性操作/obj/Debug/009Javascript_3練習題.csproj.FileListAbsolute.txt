@@ -3,3 +3,8 @@ C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\009Javascript_3練習題\008物件屬�
 C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\009Javascript_3練習題\008物件屬性操作\obj\Debug\ResolveAssemblyReference.cache
 C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\009Javascript_3練習題\008物件屬性操作\obj\Debug\008物件屬性操作.dll
 C:\TFS2010-Git(WEB)\coregadget-Dylan(VS)\009Javascript_3練習題\008物件屬性操作\obj\Debug\008物件屬性操作.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\009Javascript_3練習題\008物件屬性操作\bin\008物件屬性操作.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\009Javascript_3練習題\008物件屬性操作\bin\008物件屬性操作.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\009Javascript_3練習題\008物件屬性操作\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\009Javascript_3練習題\008物件屬性操作\obj\Debug\008物件屬性操作.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\009Javascript_3練習題\008物件屬性操作\obj\Debug\008物件屬性操作.pdb

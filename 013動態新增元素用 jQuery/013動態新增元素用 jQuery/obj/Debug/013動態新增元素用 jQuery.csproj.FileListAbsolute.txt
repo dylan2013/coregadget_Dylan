@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\013動態新增元素用 jQuery\013動態新增元素用 jQuery\bin\013動態新增元素用 jQuery.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\013動態新增元素用 jQuery\013動態新增元素用 jQuery\bin\013動態新增元素用 jQuery.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\013動態新增元素用 jQuery\013動態新增元素用 jQuery\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\013動態新增元素用 jQuery\013動態新增元素用 jQuery\obj\Debug\013動態新增元素用 jQuery.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\013動態新增元素用 jQuery\013動態新增元素用 jQuery\obj\Debug\013動態新增元素用 jQuery.pdb

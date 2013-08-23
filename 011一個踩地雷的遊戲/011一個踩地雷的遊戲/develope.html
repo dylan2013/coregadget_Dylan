@@ -1,0 +1,119 @@
+﻿<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+        //主程式執行點
+        $(function () {
+            //建立表格用的script
+            RunSynt1();
+
+            //設定畫面上的屬性
+            RunReset();
+
+            //答案
+            $("#Question1").on("click", "td", function () {
+                //$("body").on("click", "td", function () {
+
+                //取得被按下的格子的屬性進行判斷
+                var td_b = $(this);
+
+                if ($(td_b).attr("mine") == "true") {
+                    //按到爆炸鈕時
+
+                    //2.顯示所有 有炸彈的爆炸格子
+                    $("#Question1 td[mine=true]").css("background-color", "OrangeRed");
+
+                    //1.顯示格子為紅色
+                    $(td_b).css("background-color", "Yellow");
+
+                    //3.顯示爆炸訊息
+                    alert("爆炸了!!");
+
+                    //重置畫面
+                    RunSynt1();
+
+                    //重新設定畫面上的屬性
+                    RunReset();
+                }
+                else {
+                    //未按到爆炸扭,呈現綠色
+                    $(td_b).css("background-color", "green");
+                }
+
+            });
+
+            $("#TextValue1").change(function () {
+                RunSynt1();
+                RunReset();
+            });
+            $("#TextValue2").change(function () {
+                RunSynt1();
+                RunReset();
+            });
+        });
+
+        //建立表格用
+        function RunSynt1() {
+            var q = "";
+            for (eachIndex = 0; eachIndex < $("#TextValue1").val(); eachIndex++) {
+                q += "<tr>";
+                for (eachIndex2 = 0; eachIndex2 < $("#TextValue1").val(); eachIndex2++) {
+                    q += "<td></td>";
+                }
+                q += "</tr>";
+            }
+
+            $("#Question1 tbody").html(q);
+        };
+        //重置
+        function RunReset() {
+
+            var td = $("#Question1 td");
+            $(td).removeAttr("mine");
+            //亂數取得10個td,把td內容增加屬性以判斷資料狀態
+            for (var x = 0; x <= $("#TextValue2").val(); x++) {
+                //亂數位置
+                var y = Math.floor(Math.random() * td.length);
+                //取得亂數之td
+                var setTD = $(td).get(y);
+
+                //如果沒有mine屬性
+                if (!$(setTD).attr("mine")) {
+                    $(setTD).attr("mine", "true");
+                }
+            }
+
+        };
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <table id="Question1" border="1" width="500" height="500">
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="div1"></div>
+    <div id="div3">
+        <p>
+            第六題
+        </p>
+        <p>
+            一個9*9的表格,使用者可按下任何一格</p>
+        <p>
+            當該格子有炸彈則爆炸,並提示訊息</p>
+        <p>
+            當該格子沒有炸彈則顯示綠色</p>
+        <p>
+            請輸入表格 格子的數量(例:9*9)</p>
+        <input id="TextValue1" type="text" value="9" />
+        <p>
+            請輸入放置炸彈數量</p>
+        <input id="TextValue2" type="text" value="10" />
+    </div>
+</body>
+</html>

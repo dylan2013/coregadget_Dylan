@@ -1,0 +1,91 @@
+﻿<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+        //主程式執行點
+        function setVal() {
+
+            $("input:text").val("TextBox");
+
+            $("textarea").val("TextArea!");
+
+            $("#selSingle").val("Opt2");
+
+            $("#selMulti").val(["Opt1", "Opt3"]);
+
+            $("#rdo input").val(["Radio2"]);
+
+            $("#cbx input").val(["Checkbox1", "Checkbox3"]);
+
+        }
+
+        function showVal() {
+
+            $(".inp").each(function () {
+
+                var v = $(this).val();
+
+                alert(this.tagName + "->" + v);
+
+            });
+
+            alert("Radio: " + $("#rdo input").val());
+
+            $("#cbx input:checkbox:checked").each(function () {
+
+                alert("Checkbox: " + $(this).val());
+
+            });
+
+        }
+
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <img src='http://l.yimg.com/f/i/tw/auction/ecm/c91115456.jpg' />
+        <img src='http://ads.yimg.com/ja/a/tw/ivychang/14372061_0819v1_0820a_01.jpg' />
+        <img src='http://l.yimg.com/f/i/tw/hp/today/f72866b4p.jpg' />
+        <img src='http://ads.yimg.com/ja/a/tw/yukilai/14470061_sw2_0819_A.jpg' />
+    </div>
+    <div id="div2">
+        <input type="text" class="inp" /><br />
+        <select class="inp" id="selSingle">
+            <option>Opt1</option>
+            <option>Opt2</option>
+            <option>Opt3</option>
+        </select><br />
+        <textarea class="inp"></textarea><br />
+        <select multiple="multiple" class="inp" id="selMulti">
+            <option>Opt1</option>
+            <option>Opt2</option>
+            <option>Opt3</option>
+        </select>
+        <div id="rdo">
+            <input type="radio" name="r" value="Radio1" />RDO1
+            <input type="radio" name="r" value="Radio2" />RDO2
+        </div>
+        <div id="cbx">
+            <input type="checkbox" value="Checkbox1" />CBX1
+            <input type="checkbox" value="Checkbox2" />CBX2
+            <input type="checkbox" value="Checkbox3" />CBX3
+        </div>
+        <input type="button" value="Set Value" onclick="setVal()" />
+        <input type="button" value="Show Value" onclick="showVal()" />
+    </div>
+    <div id="div3">
+        <div>
+            1<span>123a</span></div>
+        <div>
+            2<span>123b</span></div>
+        <div>
+            3<span>123c</span></div>
+        <div>
+            4<span>123d</span></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\010樣式_屬性_欄位內容存取語法\010樣式_屬性_欄位內容存取語法\bin\010樣式_屬性_欄位內容存取語法.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\010樣式_屬性_欄位內容存取語法\010樣式_屬性_欄位內容存取語法\bin\010樣式_屬性_欄位內容存取語法.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\010樣式_屬性_欄位內容存取語法\010樣式_屬性_欄位內容存取語法\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\010樣式_屬性_欄位內容存取語法\010樣式_屬性_欄位內容存取語法\obj\Debug\010樣式_屬性_欄位內容存取語法.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\010樣式_屬性_欄位內容存取語法\010樣式_屬性_欄位內容存取語法\obj\Debug\010樣式_屬性_欄位內容存取語法.pdb

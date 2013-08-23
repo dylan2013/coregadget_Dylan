@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+        //主程式執行點
+        $(document).ready(function () {
+
+
+            $("#div1").on("click", "span", function () {
+                $("#div3").html($(this).clone());
+            });
+
+            $("#div2").on("click", "span", function () {
+                if ($("input:checked").attr("text") == "before") {
+                    $(this).before($("#div3 span"));
+                }
+                else if ($("input:checked").attr("text") == "after") {
+                    $(this).after($("#div3 span"));
+                }
+                else if ($("input:checked").attr("text") == "input") {
+                    $(this).append($("#div3 span"));
+                    $(this).toggleClass("spanNew1");
+                    $(this).css("background-color", $(this).css("background-color"))
+                }
+                else {
+                    $("#div3 span").append($(this));
+                    $("#div3 span").toggleClass("spanNew1");
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <p>
+        問題:8
+        <br />
+        點擊區塊1後將色塊放置於區塊3<br />
+        點擊區塊2會將區塊3依指令放置於區塊2目標色塊之特定位置</p>
+    <div id="div1">
+        <p>
+            區塊1</p>
+        <span class="spanRed"></span><span class="spanBlue"></span><span class="spanYellow">
+        </span><span class="spanGreen"></span>
+    </div>
+    <div id="div2">
+        <p>
+            區塊2</p>
+        <span class="spanRed"></span><span class="spanBlue"></span><span class="spanYellow">
+        </span><span class="spanGreen"></span>
+    </div>
+    <div id="div3">
+        <p>
+            區塊3</p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <input type="radio" name="abc" text="after" checked="true">放置目標後方<br />
+    <input type="radio" name="abc" text="before">放置目標前方<br />
+    <input type="radio" name="abc" text="input">放置目標裡面<br />
+    <input type="radio" name="abc" text="output">放置目標外面<br />
+</body>
+</html>

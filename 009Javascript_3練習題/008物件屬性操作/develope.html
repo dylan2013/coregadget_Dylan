@@ -12,19 +12,30 @@
             $("#Question1 td:odd").css("background-color", "black");
 
             //第二題答案
-            var countA = 3;
-            var countB = 0;
-            $("#Question2 td:odd").css("background-color", "black").each(function (index, item) {
-                if (countB < countA) {
-                    countB += 1;
-                }
-                else {
-                    countB = 1;
-                }
-                item.html = countB.toString;
+            $("#Question2 td:odd").css("background-color", "black").css("color", "white")
+//            var countA = 3;
+//            var countB = 0;
+//            $("#Question2 td").each(function (index, item) {
+//                if (countB < countA) {
+//                    countB += 1;
+//                }
+//                else {
+//                    countB = 1;
+//                }
+//                item.innerText = countB.toString();
+//            });
+
+            //官方寫法
+            $("#Question2 td").each(function (i) {
+                $(this).text((i % 3) + 1);
             });
 
             //第三題答案
+            $("#Question3 td:odd").css("background-color", "black").css("color", "white")
+            $("#Question3 td").each(function (i) {
+                $(this).text((i % 3) + 1);
+            });
+            $("#Question3 td:contains('3')").css("color", "red")
         });
     </script>
 </head>

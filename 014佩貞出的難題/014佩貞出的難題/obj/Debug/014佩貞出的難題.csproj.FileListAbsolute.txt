@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\014佩貞出的難題\014佩貞出的難題\bin\014佩貞出的難題.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\014佩貞出的難題\014佩貞出的難題\bin\014佩貞出的難題.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\014佩貞出的難題\014佩貞出的難題\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\014佩貞出的難題\014佩貞出的難題\obj\Debug\014佩貞出的難題.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\014佩貞出的難題\014佩貞出的難題\obj\Debug\014佩貞出的難題.pdb

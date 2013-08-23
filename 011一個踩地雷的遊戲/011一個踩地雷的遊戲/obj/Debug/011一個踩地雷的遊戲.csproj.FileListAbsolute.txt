@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\011一個踩地雷的遊戲\011一個踩地雷的遊戲\bin\011一個踩地雷的遊戲.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\011一個踩地雷的遊戲\011一個踩地雷的遊戲\bin\011一個踩地雷的遊戲.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\011一個踩地雷的遊戲\011一個踩地雷的遊戲\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\011一個踩地雷的遊戲\011一個踩地雷的遊戲\obj\Debug\011一個踩地雷的遊戲.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\011一個踩地雷的遊戲\011一個踩地雷的遊戲\obj\Debug\011一個踩地雷的遊戲.pdb

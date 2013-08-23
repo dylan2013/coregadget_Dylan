@@ -1,0 +1,120 @@
+﻿<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+        $(function () {
+            //建立表格用的script
+            RunSynt1();
+
+            //答案
+            $("#Question1").on("click", "td", function () {
+                //$("body").on("click", "td", function () {
+
+                $("#Question1 td").css("background-color", "");
+
+
+                //取得被按下的格子
+                var td = $(this);
+
+                var index_1 = $(td).index();
+
+                //取得被按下格子的父項(一般是tr那一層)
+                var tr = $(td).parent();
+                tr.children().css("background-color", "red");
+
+                //$(tr).parent.find("tr").each(function (index, item) {
+
+                $(td).closest("tbody").find("tr").each(function (index, item1) {
+
+                    $(item1).find("td").each(function (index, item2) {
+                        if (index == index_1) {
+                            $(item2).css("background-color", "green");
+                        }
+
+                    });
+
+                });
+
+                td.css("background-color", "black");
+
+            });
+        });
+
+        $(function () {
+            //建立表格用的script
+            RunSynt2();
+
+            //答案
+            $("#Question2").on("click", "td", function () {
+
+                $("#Question2 tr,#Question2 td").css("background-color", "");
+
+                //取得被按下的格子
+                var td = $(this);
+                var row_index = td.index();
+
+                var tr = $(td).parent();
+                var column_index = tr.index();
+
+                $(td).closest("tbody").find("tr").each(function (index1, item1) {
+                    if (index1 >= column_index + 1) {
+                        $(item1).css("background-color", "green");
+                    }
+
+                    $(item1).find("td").each(function (index2, item2) {
+                        if (index2 >= row_index + 1) {
+                            $(item2).css("background-color", "green");
+                        }
+                    });
+                });
+
+                td.css("background-color", "black");
+            });
+        });
+
+        function RunSynt1() {
+            var q = "";
+            for (eachIndex = 0; eachIndex < 9; eachIndex++) {
+                q += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
+            }
+            $("#Question1 tbody").html(q);
+        };
+
+        function RunSynt2() {
+            var q = "";
+            for (eachIndex = 0; eachIndex < 9; eachIndex++) {
+                q += "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>";
+            }
+            $("#Question2 tbody").html(q);
+        };
+    </script>
+</head>
+<body>
+    <p>
+        第四題
+    </p>
+    <p>
+        一個9*9的表格,使用者按下任何一格</p>
+    <p>
+        橫列顯示紅色/直列顯示綠色/被按下那格顯示黑色</p>
+    <table id="Question1" border="1" width="300" height="300">
+        <tbody>
+        </tbody>
+    </table>
+    <p>
+        第五題
+    </p>
+    <p>
+        一個9*9的表格,使用者按下任何一格</p>
+    <p>
+        圈選左上至該格的範圍為白色/以外的顏色為綠色</p>
+    <table id="Question2" border="1" width="300" height="300">
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

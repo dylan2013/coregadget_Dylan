@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\016觸發checkbox的問題\016觸發checkbox的問題\bin\016觸發checkbox的問題.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\016觸發checkbox的問題\016觸發checkbox的問題\bin\016觸發checkbox的問題.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\016觸發checkbox的問題\016觸發checkbox的問題\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\016觸發checkbox的問題\016觸發checkbox的問題\obj\Debug\016觸發checkbox的問題.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\016觸發checkbox的問題\016觸發checkbox的問題\obj\Debug\016觸發checkbox的問題.pdb

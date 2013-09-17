@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "017客戶服務網站測試用", "017客戶服務網站測試用\017客戶服務網站測試用.csproj", "{261A6CF8-0C7D-49BC-963C-6310D6B4E207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{261A6CF8-0C7D-49BC-963C-6310D6B4E207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261A6CF8-0C7D-49BC-963C-6310D6B4E207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261A6CF8-0C7D-49BC-963C-6310D6B4E207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261A6CF8-0C7D-49BC-963C-6310D6B4E207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

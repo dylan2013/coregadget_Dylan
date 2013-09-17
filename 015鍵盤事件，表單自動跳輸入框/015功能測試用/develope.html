@@ -1,0 +1,162 @@
+﻿<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('input').on('keydown', function (e) {
+                var now = $(this);
+                var jjp = true;
+                var jjk;
+                var name;
+                var x;
+                //按"下"鍵與"Enter"鍵
+                if (e.which == '13' || e.which == '40') {
+
+
+                    for (x = 0; x < $(document).find('input').length; x++) {
+                        if (jjp) {
+
+                            name = $($(document).find('input')[x]).attr('name');
+                            if ($($(document).find('input')[x]).attr('name') == now.attr('name')) {
+                                jjp = false;
+                            }
+                        }
+                        else {
+                            jjk = $($(document).find('input')[x]);
+                            break;
+                        }
+                    }
+                    $(jjk).focus().select();
+                }
+                else if (e.which == '38') {
+                    //按"上"鍵
+                    for (x = $(document).find('input').length; x >= 0; x--) {
+                        if (jjp) {
+
+                            name = $($(document).find('input')[x]).attr('name');
+                            if ($($(document).find('input')[x]).attr('name') == now.attr('name')) {
+                                jjp = false;
+                            }
+                        }
+                        else {
+                            jjk = $($(document).find('input')[x]);
+                            break;
+                        }
+                    }
+                    $(jjk).focus().select();
+                }
+            });
+
+            //做法2
+            //                //當是Enter 或是下鍵時
+            //                if (e.which == '13' || e.which == '40') {
+            //                    if ($(IsTr).next().find('input').length > 1) {
+
+
+            //                        $($(IsTr).next().find('input').siblings()[0]).focus().select();
+
+            //                    }
+            //                    else {
+            //                        $(IsTr).next().find('input').focus().select();
+
+            //                    }
+            //                }
+            //                else if (e.which == '38') {
+            //                    //當是上鍵
+            //                    if ($(IsTr).prev().find('input').length > 1) {
+            //                        $($(IsTr).prev().find('input').siblings()[0]).focus().select();
+            //                    }
+            //                    else {
+            //                        $(IsTr).prev().find('input').focus().select();
+            //                    }
+            //                }
+        });
+    </script>
+</head>
+<body>
+    <form method="post">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    項目
+                </th>
+                <th>
+                    填寫
+                </th>
+                <th>
+                    採計上限
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    均衡學習
+                </th>
+                <td>
+                    <input class="input-block-level" id="balanced" name="balanced" type="text" />
+                </td>
+                <td>
+                    上限10分
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    服務學習
+                </th>
+                <td>
+                    <input class="input-block-level" id="services" name="services" type="text" />
+                </td>
+                <td>
+                    上限10分
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    體適能
+                </th>
+                <td>
+                    <input class="input-block-level" id="fitness" name="fitness" type="text" />
+                </td>
+                <td>
+                    上限20分
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    獎勵紀錄
+                </th>
+                <td>
+                    大功
+                    <input class="input-mini" id="meritA" name="meritA" type="text" />
+                    小功
+                    <input class="input-mini" id="meritB" name="meritB" type="text" /><br />
+                    <br />
+                    嘉獎
+                    <input class="input-mini" id="meritC" name="meritC" type="text" />
+                </td>
+                <td>
+                    上限10分
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    幹部任期
+                </th>
+                <td>
+                    <input class="input-block-level" id="term" name="term" type="text" />
+                </td>
+                <td>
+                    上限10分
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+</body>
+</html>

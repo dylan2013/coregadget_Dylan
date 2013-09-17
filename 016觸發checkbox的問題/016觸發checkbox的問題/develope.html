@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var x;
+            (x) ? alert('true') : alert('false'); 
+
+            // 如果勾選Other，文字輸入框設為enabled的狀態
+            //如果按下Checked鈕的是other 與 取checked值(是否為True)。
+            //用來確認是否為Other
+            $(":checkbox").click(function () {
+
+
+                if ($(this).val() === 'other' && $(this).prop('checked')) {
+                    $(':text').prop('disabled', false);
+                } else {
+                    $(':text').prop('disabled', true);
+                }
+            });
+
+            // 全選
+            $('input:button[name=checked]').click(function () {
+                //所有checkbox,不是選擇的狀態,執行click指令
+                $("input:checkbox:not(:checked)").click();
+            });
+
+            // 全不選
+            $('input:button[name=unchecked]').click(function () {
+                //所有checkbox,是選擇的狀態,執行click指令
+                $("input:checkbox:checked").click();
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="checked" value="全選">
+    <input type="button" name="unchecked" value="全不選"><br />
+    <input type="checkbox" value="1" /><span>item 1</span>
+    <br />
+    <input type="checkbox" value="2" /><span>item 2</span>
+    <br />
+    <input type="checkbox" value="3" /><span>item 3</span>
+    <br />
+    <input type="checkbox" value="other" /><span>Other</span>
+    <input type="text" value="" disabled>
+</body>
+</html>

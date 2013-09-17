@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\015功能測試用\015功能測試用\bin\015功能測試用.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\015功能測試用\015功能測試用\bin\015功能測試用.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\015功能測試用\015功能測試用\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\015功能測試用\015功能測試用\obj\Debug\015功能測試用.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\015功能測試用\015功能測試用\obj\Debug\015功能測試用.pdb

@@ -1,53 +1,8 @@
 ﻿<html>
 <head>
-    <title>OAuth Grant Test</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <p id="text">
-    </p>
-    <p id="response" style="display: none;">
-        <span style="float: left; margin-right: 10px;">Response:</span>
-        <textarea id="response_area" style="width: 500px; height: 200px;"></textarea>
-    </p>
-    <img id="spinner" src="https://raw.github.com/sjhcockrell/spinners/master/gif/spinner_16.gif"
-        style="display: none;" />
-    <form action="https://ischool.zendesk.com/home" id="authorize" style="display: none;"
-    method="GET">
-    <input type="text" name="client_id" value="Login" />
-    <input type="text" name="response_type" value="token" />
-    <input type="text" name="redirect_uri" value="https://ischool.zendesk.com/" />
-    <!-- Space separated scope -->
-    <input type="text" name="scope" value="read%20write" />
-    <input type="submit" value="Authorize!" />
-    </form>
-    <script>
-    
-    
-    </script>
-    <script type="text/javascript">
-        function getHashParameter(name) {
-            return decodeURIComponent((new RegExp('[#|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.hash) || [, ""])[1].replace(/\+/g, '%20')) || null;
-        }
-
-        $(document).ready(function () {
-            var error = getHashParameter("error");
-            var token = getHashParameter("access_token");
-            if (error) {
-                $("#text").html(getHashParameter("error_description"));
-                $("#authorize").show();
-            } else if (token) {
-                $("#text").html("Received token: " + token + ". Initiating OAuth ticket request."); var spinner = $("#spinner"); spinner.show();
-
-                $.ajax('https://ischool.zendesk.com/api/v2/tickets.json', { method: 'GET', beforeSend: function (xhr) { xhr.setRequestHeader("Authorization", "Bearer " + token); } }).done(function (data, textStatus, xhr) {
-                    $("#response_area").html(JSON.stringify(data));
-                    $("#response").show()
-                }).fail(function (xhr, textStatus, errorThrown) {
-                    console.log(xhr); console.log(textStatus); console.log(errorThrown); $("#response_area").html("An error occured, check the console.");
-                    $("#response").show()
-                }).complete(function () { spinner.hide(); $("#authorize").show(); });
-            } else { $("#authorize").show(); }
-        }); 
-    </script>
+<header class="masthead" role="banner"><div class="masthead-top col-960"><div class="secondary-menu menu"><a class="secondary-menu-item masthead-top-login-link login-link" href="https://ischool.zendesk.com/login">用戶登入</a><ul class="list list-vert secondary-menu-item masthead-top-item masthead-top-i18n"><li class="first"><ul class="list-sub" style="display: none;"><li class="list-item default en" style="display:none;"></div><div class="masthead-stuck-target"><div class="js-stuck-inner"><header class="site-title"><a href="http://www.ischool.com.tw/" title="ischool" rel="home"></a></header><div class="primary-menu"><div class="primary-menu-anchor"></div><nav class="primary-menu-list-wrap"><ul class="primary-menu-list"><button type="button" class="btn btn-default btn-lg btn-block"><a href="https://ischool.zendesk.com/home">客服主頁</a></button><button type="button" class="btn btn-default btn-lg btn-block"><a href="http://www.ischool.com.tw/29986216971.html">產品</a></button><button type="button" class="btn btn-default btn-lg btn-block"><a href="https://sites.google.com/a/ischool.com.tw/dev/">模組開發</a></button><button type="button" class="btn btn-default btn-lg btn-block"><a href="https://www.facebook.com/pages/ischool-%E6%BE%94%E5%AD%B8/134650313212257">粉絲團</a></button><button type="button" class="btn btn-default btn-lg btn-block"><a href="https://www.facebook.com/pages/ischool-%E6%BE%94%E5%AD%B8/134650313212257">模組開發</a></button></ul><a href="http://www.ischool.com.tw/20813360273543029992.html" class="buy-button register sticky orange primary-menu-bar-cta-item button-global-trial" data-plan="trial">馬上免費試用</a></nav></div></div></div></div></header>
 </body>
 </html>

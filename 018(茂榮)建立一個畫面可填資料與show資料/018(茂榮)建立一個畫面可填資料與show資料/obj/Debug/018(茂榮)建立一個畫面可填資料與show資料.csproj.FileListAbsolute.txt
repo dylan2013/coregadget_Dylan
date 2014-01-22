@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\018(茂榮)建立一個畫面可填資料與show資料\018(茂榮)建立一個畫面可填資料與show資料\bin\018(茂榮)建立一個畫面可填資料與show資料.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\018(茂榮)建立一個畫面可填資料與show資料\018(茂榮)建立一個畫面可填資料與show資料\bin\018(茂榮)建立一個畫面可填資料與show資料.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\018(茂榮)建立一個畫面可填資料與show資料\018(茂榮)建立一個畫面可填資料與show資料\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\018(茂榮)建立一個畫面可填資料與show資料\018(茂榮)建立一個畫面可填資料與show資料\obj\Debug\018(茂榮)建立一個畫面可填資料與show資料.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\018(茂榮)建立一個畫面可填資料與show資料\018(茂榮)建立一個畫面可填資料與show資料\obj\Debug\018(茂榮)建立一個畫面可填資料與show資料.pdb

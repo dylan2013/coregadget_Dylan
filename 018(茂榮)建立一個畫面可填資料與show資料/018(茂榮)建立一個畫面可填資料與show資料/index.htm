@@ -5,11 +5,20 @@
     <link href="css/default.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <script src="js/angular.min.js"></script>
+      <script src="js/jquery.min.js"></script>
     <script>
-    
+        $(document).ready(function () {
+            $("#abc").action();
+        });
     </script>
 </head>
 <body>
+    <div id="abc">
+        1</div>
+    <div>
+        2</div>
+    <div>
+        3</div>
     <table class="table">
         <thead>
             <tr>
@@ -41,7 +50,7 @@
                 <td>
                     Hello World !!
                 </td>
-                 <td>
+                <td>
                     2013/11/24 15:18
                 </td>
                 <td>

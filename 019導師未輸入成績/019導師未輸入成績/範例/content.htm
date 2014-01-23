@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="http://web.ischool.com.tw/devlibrary/gadget.js"></script>
+    <script>
+        init({
+            application: "https://dev.ischool.com.tw/cs4_demo/demo.ischool.j/",
+            paramValues: {}
+        });
+    </script>
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/mybootstrap.css" rel="stylesheet" />
+  <link href="css/base.css" rel="stylesheet" />
+  <link href="css/default.css" rel="stylesheet" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+	gadget.setExterior({hint:4});
+  </script>
+</head>
+<body>
+  <div class="my-page" id="gadget">
+    <div class="row-fluid">
+      <div class="span12">
+        <h1>成績輸入進度查詢</h1>
+		<div class="pull-left">
+			<span class="text-error">未完成輸入數：4</span>
+		</div>
+		<div class="pull-right">
+			<a href="javascript:void(0);"><i class="icon-refresh"></i>重新整理</a>
+		</div>
+        <div class="row-fluid">
+          <div class="span12">
+            <form method="post">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th class="span3">班級 / 課程</th>
+                    <th class="span3">項目</th>
+                    <th class="span4">輸入時間</th>
+                    <th>狀態</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="error">
+                    <td>103</td>
+                    <td>日常生活表現</td>
+                    <td>2014/1/11 ~ 2014/1/20 23:59</td>
+                    <td>0 / 44</td>
+                  </tr>
+                  <tr class="error">
+                    <td>103國文</td>
+                    <td>第三次段考</td>
+                    <td>2014/1/11 ~ 2014/1/20 23:59</td>
+                    <td>0 / 44</td>
+                  </tr>
+                  <tr class="error">
+                    <td>102國文</td>
+                    <td>第三次段考</td>
+                    <td>2014/1/11 ~ 2014/1/20 23:59</td>
+                    <td>0 / 40</td>
+                  </tr>
+                  <tr class="error">
+                    <td>101國文</td>
+                    <td>第三次段考</td>
+                    <td>2014/1/11 ~ 2014/1/20 23:59</td>
+                    <td>0 / 42</td>
+                  </tr>
+                  <tr>
+                    <td>103國文</td>
+                    <td>第二次段考</td>
+                    <td>2013/11/20 ~ 2013/11/30 23:59</td>
+                    <td>44 / 44</td>
+                  </tr>
+                  <tr>
+                    <td>102國文</td>
+                    <td>第二次段考</td>
+                    <td>2013/11/20 ~ 2013/11/30 23:59</td>
+                    <td>40 / 40</td>
+                  </tr>
+                  <tr>
+                    <td>101國文</td>
+                    <td>第二次段考</td>
+                    <td>2013/11/20 ~ 2013/11/30 23:59</td>
+                    <td>42 / 42</td>
+                  </tr>
+                  <tr>
+                    <td>103國文</td>
+                    <td>第一次段考</td>
+                    <td>2013/10/1 ~ 2013/10/10 23:59</td>
+                    <td>44 / 44</td>
+                  </tr>
+                  <tr>
+                    <td>102國文</td>
+                    <td>第一次段考</td>
+                    <td>2013/10/1 ~ 2013/10/10 23:59</td>
+                    <td>40 / 40</td>
+                  </tr>
+                  <tr>
+                    <td>101國文</td>
+                    <td>第一次段考</td>
+                    <td>2013/10/1 ~ 2013/10/10 23:59</td>
+                    <td>42 / 42</td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+</body>
+</html>

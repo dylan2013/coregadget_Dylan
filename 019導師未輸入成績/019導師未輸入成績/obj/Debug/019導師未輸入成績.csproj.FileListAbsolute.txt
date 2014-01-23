@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\019導師未輸入成績\019導師未輸入成績\bin\019導師未輸入成績.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\019導師未輸入成績\019導師未輸入成績\bin\019導師未輸入成績.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\019導師未輸入成績\019導師未輸入成績\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\019導師未輸入成績\019導師未輸入成績\obj\Debug\019導師未輸入成績.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\019導師未輸入成績\019導師未輸入成績\obj\Debug\019導師未輸入成績.pdb

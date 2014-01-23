@@ -51,6 +51,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="範例\content.htm" />
+    <Content Include="範例\css\base.css" />
+    <Content Include="範例\css\bootstrap-responsive.css" />
+    <Content Include="範例\css\bootstrap.css" />
+    <Content Include="範例\css\default.css" />
+    <Content Include="範例\css\images\glyphicons-halflings-white.png" />
+    <Content Include="範例\css\images\glyphicons-halflings.png" />
+    <Content Include="範例\css\images\page-bg.gif" />
+    <Content Include="範例\css\images\thbg.png" />
+    <Content Include="範例\css\mybootstrap.css" />
+    <Content Include="範例\description.xml" />
+    <Content Include="範例\img\custom-scroll-bar.png" />
+    <Content Include="範例\js\api.js" />
+    <Content Include="範例\js\bootstrap.js" />
+    <Content Include="範例\js\default.js" />
+    <Content Include="範例\js\gadget.js" />
+    <Content Include="範例\js\jquery.metadata.js" />
+    <Content Include="範例\js\jquery.min.js" />
+    <Content Include="範例\js\jquery.validate.min.js" />
+    <Content Include="範例\js\messages_tw.js" />
     <Content Include="content.htm" />
     <Content Include="css\base.css" />
     <Content Include="css\bootstrap-responsive.css" />
@@ -84,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="範例\css\base.less" />
+    <None Include="範例\css\default.less" />
+    <None Include="範例\Thumbs.db" />
     <None Include="css\base.less" />
     <None Include="css\default.less" />
   </ItemGroup>

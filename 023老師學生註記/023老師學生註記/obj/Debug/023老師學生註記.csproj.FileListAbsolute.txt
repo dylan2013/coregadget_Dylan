@@ -1,0 +1,5 @@
+C:\TFS2010-Git(WEB)\coregadget_Dylan\023老師學生註記\023老師學生註記\bin\023老師學生註記.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\023老師學生註記\023老師學生註記\bin\023老師學生註記.pdb
+C:\TFS2010-Git(WEB)\coregadget_Dylan\023老師學生註記\023老師學生註記\obj\Debug\ResolveAssemblyReference.cache
+C:\TFS2010-Git(WEB)\coregadget_Dylan\023老師學生註記\023老師學生註記\obj\Debug\023老師學生註記.dll
+C:\TFS2010-Git(WEB)\coregadget_Dylan\023老師學生註記\023老師學生註記\obj\Debug\023老師學生註記.pdb

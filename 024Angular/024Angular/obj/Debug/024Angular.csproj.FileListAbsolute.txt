@@ -1,0 +1,6 @@
+C:\Users\dylan\Desktop\公司\GitHub_Web\coregadget_Dylan\024Angular\024Angular\bin\024Angular.dll.config
+C:\Users\dylan\Desktop\公司\GitHub_Web\coregadget_Dylan\024Angular\024Angular\bin\024Angular.dll
+C:\Users\dylan\Desktop\公司\GitHub_Web\coregadget_Dylan\024Angular\024Angular\bin\024Angular.pdb
+C:\Users\dylan\Desktop\公司\GitHub_Web\coregadget_Dylan\024Angular\024Angular\obj\Debug\024Angular.csprojResolveAssemblyReference.cache
+C:\Users\dylan\Desktop\公司\GitHub_Web\coregadget_Dylan\024Angular\024Angular\obj\Debug\024Angular.dll
+C:\Users\dylan\Desktop\公司\GitHub_Web\coregadget_Dylan\024Angular\024Angular\obj\Debug\024Angular.pdb

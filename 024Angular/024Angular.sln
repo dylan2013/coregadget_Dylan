@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "023老師學生註記", "023老師學生註記\023老師學生註記.csproj", "{E49483E7-4039-4B1E-9CAD-3F278832E49F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "024Angular", "024Angular\024Angular.csproj", "{67420C15-9025-489A-9BED-ECBAB1119826}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E49483E7-4039-4B1E-9CAD-3F278832E49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E49483E7-4039-4B1E-9CAD-3F278832E49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E49483E7-4039-4B1E-9CAD-3F278832E49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E49483E7-4039-4B1E-9CAD-3F278832E49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67420C15-9025-489A-9BED-ECBAB1119826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67420C15-9025-489A-9BED-ECBAB1119826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67420C15-9025-489A-9BED-ECBAB1119826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67420C15-9025-489A-9BED-ECBAB1119826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

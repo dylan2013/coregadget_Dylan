@@ -8,7 +8,7 @@
             if (error === null) {
                 //alert("讀取班級學生成功!!");
                 var courseString = '';
-                $(response.Response.Studentnoterecord).each(function (index, item) {
+                $(response.Studentnoterecord).each(function (index, item) {
                     courseString += "<tr>";
                     courseString += "<td>" + item.RefStudentId + "</td>";
                     courseString += "<td>" + item.Note + "</td>";

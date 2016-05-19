@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<!-- Contomers是我在angular.module定義的名稱-->
+<html ng-app="Contomers">
+<head>
+    <title>測試Angular</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="http://code.angularjs.org/1.2.13/angular.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular-route.min.js"></script>
+    <script src="js/test.js"></script>
+</head>
+<body>
+    <div ng-view>123</div>
+
+    <script>
+
+        var app = angular.module("Contomers", ['ngRoute']);
+
+        app.controller("DylanController", function ($scope) {
+            $scope.Name = "Bill";
+            $scope.Age = "20";
+        });
+
+        app.controller("DylanController2", function ($scope) {
+            $scope.Name = "Zoe";
+            $scope.Age = "17";
+        });
+
+        app.config(function ($routeProvider) {
+            $routeProvider.when("/AAA", {
+                templateUrl: 'ngView_Bill.html',
+                controller: "DylanController",
+            })
+            .when("/BBB", {
+                templateUrl: 'ngView_Zoe.html',
+                controller: "DylanController2",
+            })
+            .otherwise({
+                redirectTo:'/AAA'
+            });
+        });
+
+
+    </script>
+</body>
+</html>

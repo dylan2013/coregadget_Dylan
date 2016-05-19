@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<!-- ng-app是標記此文件是一個Angural語言-->
+<html ng-app>
+<head>
+    <title>測試Angular</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/angular.min.js"></script>
+    <script src="js/test.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular-animate.min.js"></script>
+</head>
+<!-- 預設一個List內容-->
+<body ng-init="Cont=['Base','Now','JJ']">
+    <div>
+        <p>Search:</p>
+        <!--一個被Angular改寫過的Input-->
+        <input type="text" ng-model="searchText" />
+
+        <!--ng-show 當內容為False就隱藏,當為True就顯示-->
+        <!--需注意,當字串為'0'或'false' 會被轉型而該被判斷為'False'-->
+        <p ng-show="searchText">Hello! {{searchText}}</p>
+
+
+        <p>--------------</p>
+
+        <p>將 ng-init 內容顯示</p>
+        <!-- ng-repat是Angular的ForEach-->
+        <!-- item每一個元素 / Cont那個List的名稱-->
+        <!-- ng-repat說明 http://docs.angularjs.org/api/ng/directive/ngRepeat-->
+        <div ng-repeat="item in Cont">
+            <!-- 使用大刮號將item資料顯示出來-->
+            <span>{{item}}</span>
+        </div>
+
+        <p>--------------</p>
+
+        <!-- filter 將repeat的資料去filter查詢出相同內容 -->
+        <!-- filter說明 http://docs.angularjs.org/api/ng/filter/filter -->
+        <p>顯示出篩選後的內容:</p>
+        <div ng-repeat="item in Cont | filter:searchText">
+            <!-- 使用大刮號將item資料顯示出來-->
+            <span ng-animate="">{{item}}</span>
+        </div>
+    </div>
+</body>
+</html>
